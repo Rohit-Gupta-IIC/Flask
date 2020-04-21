@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My first project</title>
+</head>
+<body>
+    <!-- the following is the demo how we use for loop in jinja -->
+    <ul>
+        {% for fruit in fruits %}
+            <li>{{ fruit }}</li>
+        {%  endfor %}
+    </ul>
+    <ul>
+        {% if 'Mango' in fruits %}
+            {% print('mango') %}
+            <!-- or -->
+            <p>Mango exists in the list</p>
+            {% else %}
+                <p>Mango does not exists</p>
+        {%  endif %}
+    </ul>
+</body>
+</html>

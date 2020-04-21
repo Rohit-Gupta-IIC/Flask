@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Project</title>
+</head>
+<body>
+    <h1>About Me</h1>
+    <!-- the below is the flask syntax to load the image, all kinds of static things are saved in the static folder -->
+    <img src="{{ url_for('static', filename='demo.png')}}" height="300" width="300"/>
+</body>
+</html>

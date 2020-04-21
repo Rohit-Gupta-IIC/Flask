@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block subcontent %}
+    <table border="1">
+        {% for em in result %}
+            <tr>
+                <td>{{ em.name }}</td>
+                <td>{{ em.age }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
